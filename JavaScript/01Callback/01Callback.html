@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback In JS</title>
+  </head>
+  <body>
+    <h1>Callback In JS</h1>
+
+    <script>
+      // Callback In JS
+
+      // => Functions are the heart of JavaScript.
+      // => A Callback is a function which is passed as an arguments to another function.
+
+      //   JavaScript is a Synchornous Single Threaded Language
+
+      // Synchornous Programming
+
+      //   console.log("Good Morning");
+      //   console.log("Good AfterNoon");
+      //   console.log("Good Evening");
+      //   console.log("Good Night");
+
+      // Asynchornous Programming
+
+      console.log("Good Morning");
+      console.log("Good AfterNoon");
+      setTimeout(function () {
+        console.log("Namaste Bharat");
+      }, 5000);
+      console.log("Good Evening");
+      console.log("Good Night");
+
+    //   function a1(b1) {
+    //     b1();
+    //     console.log("a1");
+    //   }
+
+    //   a1(function () {
+    //     console.log("b1");
+    //   });
+
+      // function b1() {
+      //     console.log("b1");
+      // }
+    </script>
+  </body>
+</html>

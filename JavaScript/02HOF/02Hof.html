@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOF - Higher Order Function</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>HOF - Higher Order Function</h1>
+    <script>
+      // HOF - Higher Order Function
+
+      const radius = [1, 2, 3, 4];
+
+      console.log(radius);
+
+      const calculateArea = () => {
+        const output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(Math.PI * radius[i] * radius[i]);
+        }
+        return output;
+      };
+
+      console.log(calculateArea(radius));
+
+      const calculateCircumference = () => {
+        const output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(2 * Math.PI * radius[i]);
+        }
+        return output;
+      };
+
+      console.log(calculateCircumference(radius));
+
+      const calculateDiameter = () => {
+        const output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(2 * radius[i]);
+        }
+        return output;
+      };
+
+      console.log(calculateDiameter(radius));
+
+      //   DRY => Don't repeat Yourself
+    </script>
+  </body>
+</html>
