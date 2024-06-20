@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce In JS</title>
+  </head>
+  <body>
+    <h1>Reduce In JS</h1>
+
+    <script>
+      // Reduce In JS
+
+      console.log("Reduce In JS");
+
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    //   sum or min or max or greater then or less then 
+
+
+    const sumOfNumber = function (arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        return sum
+    }
+
+    console.log(sumOfNumber(arr));
+
+
+    const sumOfArray = arr.reduce((acc, curr)=>{
+         acc = acc + curr;
+         return acc;
+    }, 0)
+
+    console.log(sumOfArray);
+    </script>
+  </body>
+</html>
