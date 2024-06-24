@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      body {
+        background-color: thistle;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        background-color: aqua;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+        /* height: 500px; */
+        align-items: center;
+        gap: 20px;
+      }
+      .box {
+        background-color: brown;
+        font-size: 30px;
+        color: khaki;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      /* .hey {
+        background: url(../../Images/banner.jpg) no-repeat center center/cover;
+      } */
+
+      /* Media Query  */
+
+      @media (max-width: 576px) {
+        body {
+          background-color: gold;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor ex
+          fuga voluptates neque possimus animi vel mollitia molestias. Dolores
+          eos, obcaecati labore est odit quas. Eveniet consectetur saepe vitae!
+        </div>
+        <!-- <div class="box hey">
+          <h1>Heading</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            fugit tempore repudiandae, ea velit ipsam quidem ut exercitationem
+            vero distinctio!
+          </p>
+        </div> -->
+        <div class="box hey"><img src="../../Images/banner.jpg" alt=""></div>
+        <div class="box">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor ex
+          fuga voluptates neque possimus animi vel mollitia molestias. Dolores
+          eos, obcaecati labore est odit quas. Eveniet consectetur saepe vitae!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
