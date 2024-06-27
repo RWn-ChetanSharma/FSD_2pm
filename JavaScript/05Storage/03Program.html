@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program to store Name</title>
+    <style>
+        *{
+            background-color: black;
+            color: aliceblue;
+            font-size: 50px;
+        }
+        input{
+            background-color: aliceblue;
+            color: black;
+        }
+        button{
+            background-color: aliceblue;
+            color: black;
+            margin: 20px 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Namaste <sup>4</sup> <span id="fname"></span></h1>
+    <input type="text" id="first" placeholder="Enter Name" />
+    <button id="btnClick">Click</button>
+    <script>
+      const first = document.getElementById("first");
+      const btn = document.getElementById("btnClick");
+      const fname = document.getElementById("fname");
+
+      btn.addEventListener("click", function () {
+        const value = first.value;
+        localStorage.setItem("name", value);
+        console.log(localStorage.getItem("name"));
+        location.reload()
+      });
+
+      window.addEventListener("load", function () {
+        const value = localStorage.getItem("name")
+            fname.innerHTML = value
+            console.log(value);
+      })
+    </script>
+  </body>
+</html>

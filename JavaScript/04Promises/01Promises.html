@@ -24,13 +24,14 @@
 
       // Asynchronous operation
 
-      //   async function getproducts() {
-      //       const data = await fetch("https://fakestoreapi.com/products");
-      //       console.log( data.json());
+        async function getproducts() {
+            // const data = await fetch("https://fakestoreapi.com/products");
+            const data = await fetch("https://api.api-ninjas.com/v1/weather");
+            console.log(await data.json());
 
-      //   }
+        }
 
-      //   getproducts()
+        getproducts()
 
       //   fetch("https://fakestoreapi.com/product")
       //     .then((data) => {

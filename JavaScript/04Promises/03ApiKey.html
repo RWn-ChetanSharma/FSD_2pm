@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const apikey = "81e9ccddf278f80b0ce59ef577cafc51"
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=rajkot"
+
+        async function checkWeather() {
+            const res = await fetch(apiUrl + `&appid=${apikey}`)
+            let data = await res.json()
+            console.log(data);
+        }
+        checkWeather()
+    </script>
+</body>
+</html>
