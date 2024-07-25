@@ -2,12 +2,12 @@ import GetImageUrl from './GetImageUrl';
 
 function Gallery() {
   return (
-    <div>
+    <div className='container border-5 border'>
       <h1>Notable Scientists</h1>
       <section className="profile">
         <h2>Maria Skłodowska-Curie</h2>
         <img
-          className="avatar"
+          className="avatar  rounded-5"
           src={GetImageUrl('szV5sdG')}
           alt="Maria Skłodowska-Curie"
           width={70}
@@ -31,9 +31,10 @@ function Gallery() {
       <section className="profile">
         <h2>Katsuko Saruhashi</h2>
         <img
-          className="avatar"
+          className="avatar rounded-5"
           src={GetImageUrl('YfeOqp2')}
           alt="Katsuko Saruhashi"
+          
           width={70}
           height={70}
         />
