@@ -1,5 +1,6 @@
 import Counter from "./Components/Counter"
 import Form from "./Components/Form"
+import ObjectForm from "./Components/ObjectForm"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Counter/>
       <Form/>
+      <ObjectForm/>
     </>
   )
 }

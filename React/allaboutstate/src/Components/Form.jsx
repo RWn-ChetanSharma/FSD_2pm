@@ -3,6 +3,8 @@ import React, { useState } from "react";
 function Form() {
 
     const [firstName, setFirstName] = useState("")
+
+   
     const [lastName, setLastName] = useState("")
 
 
@@ -15,6 +17,8 @@ function Form() {
 
   return (
     <>
+        <h1 className="text-center my-5 text-bg-danger ">Array Form</h1> 
+
       <div className="container  py-5 text-bg-dark my-3">
         <h1 className="text-center">My Form</h1>
         {/* BootStrap Form  */}
