@@ -1,4 +1,5 @@
 import Mycounter from "./Components/Mycounter"
+import ProductData from "./Components/ProductData"
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
     <Mycounter/>
+    <ProductData/>
     </>
   )
 }
