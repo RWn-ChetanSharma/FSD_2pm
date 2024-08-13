@@ -22,7 +22,7 @@ function Product() {
     <>
     <div className="container border border-5 p-4 text-bg-dark">
         <h1 className='text-center py-5 text-bg-primary mb-5'>Products Card</h1>
-        <ul className='list-unstyled d-flex justify-content-between flex-wrap gap-3'>
+        <ul className='list-unstyled d-flex justify-content-between flex-column gap-3'>
             {cardData}
         </ul>
     </div>

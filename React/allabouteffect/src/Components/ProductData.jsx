@@ -4,7 +4,7 @@ function ProductData() {
   // useState
 
   const [userId, setUserId] = useState(1);
-  const [userData, setUserData] = useState("");
+  const [userData, setUserData] = useState(null);
 
   // useEffect
 
