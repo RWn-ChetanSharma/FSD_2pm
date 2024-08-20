@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect ,useState } from "react";
 
 let nextId = 0;
 
@@ -36,6 +36,22 @@ function ToDoList() {
       </div>
     </div>
   ));
+
+
+
+  // Load tasks from local storage when component mounts
+  useEffect(() => {
+    const storedItems = JSON.parse(localStorage.getItem("tasks"));
+    if (storedItems) {
+      setItems(storedItems);
+    }
+  }, []);
+
+  // Save tasks to local storage whenever items change
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(items));
+  }, [items]);
+
 
   //   Delete task
 
