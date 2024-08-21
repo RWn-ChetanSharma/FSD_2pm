@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none !important;
+  color: aliceblue !important;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  background-color: black;
+  padding: 20px;
+}
+.crimson{
+  background-color: crimson;
+  color: aliceblue;
+}
