@@ -2,13 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+body{
+  background-color: gray !important;
 }
 li{
   list-style-type: none;
 }
 a{
   text-decoration: none !important;
-  color: aliceblue !important;
+  color: khaki !important;
+  font-size: 30px;
 
 }
 nav{
@@ -16,10 +21,15 @@ nav{
   align-items: center;
   justify-content: space-around;
   font-size: 30px;
-  background-color: black;
+  background-color: teal;
   padding: 20px;
 }
 .crimson{
   background-color: crimson;
-  color: aliceblue;
+  color: aliceblue !important;
+  padding: 2px;
+}
+h2{
+  background-color: brown;
+  color: khaki;
 }

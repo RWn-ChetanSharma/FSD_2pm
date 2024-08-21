@@ -6,6 +6,10 @@ import About from "./Components/About";
 import Team from "./Components/Team";
 import Login from "./Components/Login";
 import Footter from "./Components/Footter";
+import NotFound from "./Components/NotFound";
+import User from "./Components/User";
+import ProfilePage from "./Components/ProfilePage";
+import Profiles from "./Components/Profiles";
 
 function App() {
 
@@ -13,6 +17,7 @@ function App() {
     {
       path: "/",
       element: <><Navbar/><Home/><Footter/></>,
+      errorElement: <NotFound/>
     },
     {
       path: "/about",
@@ -26,6 +31,21 @@ function App() {
       path: "/login",
       element: <><Navbar/><Login/><Footter/></>,
     },
+    {
+      path: "/user/:userId",
+      element: <><Navbar/><User/><Footter/></>,
+    },
+    {
+      path: "/profiles",
+      element: <><Navbar/><Profiles/><Footter/></>,
+      children: [
+        {
+          path: "/profiles/:profileId",
+          element: <><ProfilePage/></>,
+        },
+      ]
+    },
+    
   ]);
   return (
     <>
