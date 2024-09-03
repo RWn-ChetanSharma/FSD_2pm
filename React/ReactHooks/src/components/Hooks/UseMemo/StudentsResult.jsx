@@ -52,3 +52,14 @@ export default StudentsResult;
     functions to avoid re-computing expensive values when receiving the same inputs. 
 
 */
+
+/*
+  Purpose: Avoid unnecessary recalculations of values that don’t need to change 
+          between renders.
+
+  How it works: You provide useMemo with a function that calculates a value and 
+                a list of dependencies. React will only re-run the calculation 
+                if one of those dependencies changes. If they don’t change, 
+                it will reuse the previous result.
+
+*/
