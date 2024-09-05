@@ -1,14 +1,33 @@
-import React from "react";
-import CounterCallback from "./components/Hooks/UseCallback/CounterCallback";
-
+import React, { useState } from "react";
+import Navbar from "./components/Hooks/UseContext/Navbar";
+import ParentComponent from "./components/Hooks/UseContext/ParentComponent";
+import counterContext from './context/context'
+// import CounterCallback from './components/Hooks/UseCallback/CounterCallback'
 
 function App() {
+  // const [count, setCount] = useState(initialValue);
+  const [count, setCount] = useState(1);
   return (
     <>
+      {/* useContext  */}
+
+      <counterContext.Provider value={{count, setCount}}>
+        <Navbar />
+        <ParentComponent  />
+        <div className="container text-bg-danger text-center p-3">
+          <div className="h1">Count : {count}</div>
+          <button
+            className="btn btn-primary"
+            onClick={() => setCount(count + 1)}
+          >
+            +
+          </button>
+        </div>
+      </counterContext.Provider>
+
       {/* useCallback */}
 
-    <CounterCallback/>
-
+      {/* <CounterCallback/> */}
 
       {/* useMemo  */}
 
