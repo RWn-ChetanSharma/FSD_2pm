@@ -1,17 +1,22 @@
 import React, { useState } from "react";
-import Navbar from "./components/Hooks/UseContext/Navbar";
-import ParentComponent from "./components/Hooks/UseContext/ParentComponent";
-import counterContext from './context/context'
-// import CounterCallback from './components/Hooks/UseCallback/CounterCallback'
+import FormState from "./components/Hooks/UseState/FormState";
+import FormReducer from "./components/Hooks/UseReducer/FormReducer";
+
 
 function App() {
   // const [count, setCount] = useState(initialValue);
-  const [count, setCount] = useState(1);
+  // const [count, setCount] = useState(1);
   return (
     <>
+        {/* Use Reducer */}
+
+        <FormReducer/>
+
+
+
       {/* useContext  */}
 
-      <counterContext.Provider value={{count, setCount}}>
+      {/* <counterContext.Provider value={{count, setCount}}>
         <Navbar />
         <ParentComponent  />
         <div className="container text-bg-danger text-center p-3">
@@ -23,7 +28,7 @@ function App() {
             +
           </button>
         </div>
-      </counterContext.Provider>
+      </counterContext.Provider> */}
 
       {/* useCallback */}
 
@@ -39,6 +44,14 @@ function App() {
       <div className="container text-bg-dark p-5 text-center">
           <StudentsResult name={"Rohan"} subject={"Hindi"} marks={80}/>
       </div> */}
+
+
+
+
+      {/* UseState  */}
+
+
+      <FormState/>
     </>
   );
 }
