@@ -1,11 +1,13 @@
 import React from "react";
-import { Link, NavLink, useParams } from "react-router-dom";
+import {  Link, NavLink, useParams } from "react-router-dom";
 
 function Navbar() {
   const params = useParams()
   return (
     <>
       <nav>
+{/*         
+        <NavLink className={(e) => (e.isActive ? "crimson" : "")} to="/hey">hey</NavLink> */}
         <NavLink className={(e) => (e.isActive ? "crimson" : "")} to="/">
           <li>Home</li>
         </NavLink>

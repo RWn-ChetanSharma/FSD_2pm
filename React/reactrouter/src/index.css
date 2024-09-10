@@ -33,3 +33,8 @@ h2{
   background-color: brown;
   color: khaki;
 }
+.blue{
+  background-color: blue;
+  color: aliceblue !important;
+  padding: 2px;
+}

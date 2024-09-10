@@ -6,6 +6,7 @@ function User() {
   return (
     <>
         <h1>User : {params.userId}</h1>
+        
     </>
   )
 }

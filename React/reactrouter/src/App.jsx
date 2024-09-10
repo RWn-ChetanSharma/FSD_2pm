@@ -10,6 +10,7 @@ import NotFound from "./Components/NotFound";
 import User from "./Components/User";
 import ProfilePage from "./Components/ProfilePage";
 import Profiles from "./Components/Profiles";
+import Hey from "./Components/Hey";
 
 function App() {
 
@@ -22,6 +23,10 @@ function App() {
     {
       path: "/about",
       element: <><Navbar/><About/><Footter/></>,
+    },
+    {
+      path: "/hey",
+      element: <><Navbar/><Hey/><Footter/></>,
     },
     {
       path: "/team",

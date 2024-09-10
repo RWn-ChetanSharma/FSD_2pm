@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 function Profiles() {
   const profiles = [1, 2, 3, 4, 5];
@@ -9,9 +9,9 @@ function Profiles() {
         <div className="row">
           <div className="col row">
             {profiles.map((profile) => (
-              <Link key={profile} to={`/profiles/${profile}`}>
+              <NavLink key={profile} to={`/profiles/${profile}`} className={(e) => (e.isActive ? "blue" : "")}>
                 Profile : {profile}
-              </Link>
+              </NavLink>
               // console.log(profile)
             ))}
           </div>
