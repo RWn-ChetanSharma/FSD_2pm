@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "name": "Harsh",
+        "email": "harsh@gmail.com",
+        "course": [{
+            "tech": "JavaScript"
+        }]
+
+
+    },
+    {
+        "id": 2,
+        "name": "Nishit",
+        "email": "nishit@gmail.com"
+        
+    },
+    {
+        "id": 3,
+        "name": "Manav",
+        "email": "manav@gmail.com",
+        "course":[ {
+            "tech": "Python"
+        }]
+
+    },
+    {
+        "id": 4,
+        "name": "Nikunj",
+        "email": "nikunj@gmail.com",
+        "course": [{
+            "tech": "Ruby"
+        }]
+
+    }
+]
