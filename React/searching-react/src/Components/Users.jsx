@@ -31,14 +31,13 @@ function Users() {
 
   //   Searching
 
-  const searchingUser = user
-    .filter(({ name }) => {
-      return name.indexOf(term) >= 0;
+  const searchingUser = user.filter(({ username }) => {
+      return username.indexOf(term) >= 0;
     })
     .map((e) => (
       <div key={e.id}>
         <p>
-          <strong>{e.name}</strong>
+          <strong>{e.username}</strong>
         </p>
       </div>
     ));

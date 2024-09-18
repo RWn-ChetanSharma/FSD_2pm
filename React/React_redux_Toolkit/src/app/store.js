@@ -7,6 +7,8 @@ export const store = configureStore({
   },
 });
 
+
+
 // Store - is what holds all the data your application uses.
 // Reducer - is what manipulates that data when it receives an action.
 // Action - is what tells reducer to manipulate the store data, 

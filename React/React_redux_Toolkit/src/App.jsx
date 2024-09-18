@@ -6,6 +6,7 @@ import Card from "./components/Card";
 
 function App() {
   const count = useSelector((state) => state.counter.value);
+  // const count = useSelector();
   const dispatch = useDispatch();
   return (
     <>
