@@ -1,12 +1,33 @@
 import React from 'react'
 import DispData from './components/DispData'
-// import DisplayData from './components/DisplayData'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Add from './components/Add';
+import Update from './components/Update';
+
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <DispData/>,
+    },
+    {
+      path: "/create",
+      element: <Add/>,
+    },
+    {
+      path: "/update/:id",
+      element: <Update/>,
+    },
+  ]);
+ 
   return (
     <>
-      {/* <DisplayData/> */}
-      <DispData/>
+      <RouterProvider router={router} />
     </>
   )
 }
