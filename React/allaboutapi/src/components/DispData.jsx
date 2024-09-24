@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function DispData() {
   const [col, setCol] = useState([])
@@ -17,6 +17,22 @@ function DispData() {
       .catch((err) => console.log("Bad Request"));
   }, []);
 
+  // handleDelete
+
+  function handleDelete() {
+    const askUser = confirm("You Really Wants to Delete This?");
+    if (askUser) {
+      axios.delete(`http://localhost:4040/users/`)
+      .then(res => {
+        console.log(res.data.id);
+        
+        alert("Data Deleted!");
+      })
+      .catch(err => console.log(err)
+      )
+    }
+    
+  }
   
   return (
     <>
@@ -39,8 +55,8 @@ function DispData() {
                   <td>{a.name}</td>
                   <td>{a.email}</td>
                   <td>
-                    <Link to='/update' className="btn btn-success me-2">Update</Link>
-                    <button className="btn btn-danger ms-2">Delete</button>
+                    <Link to={`/update/${a.id}`} className="btn btn-success me-2">Update</Link>
+                    <button className="btn btn-danger ms-2" onClick={handleDelete}>Delete</button>
                   </td>
               </tr>
             ))}
@@ -49,6 +65,7 @@ function DispData() {
       </div>
     </>
   );
+
 }
 
 export default DispData;

@@ -7,12 +7,12 @@
     },
     {
       "id": 2,
-      "name": "Nishit",
-      "email": "nishit@gmail.com"
+      "name": "Nishit Jadav",
+      "email": "nishitjadav@gmail.com"
     },
     {
       "id": 3,
-      "name": "Manav",
+      "name": "Manav patel",
       "email": "manav@gmail.com"
     },
     {
@@ -21,44 +21,14 @@
       "email": "nikunj@gmail.com"
     },
     {
-      "name": "chetan",
-      "email": "chetan@gmail.com",
+      "name": "Masum",
+      "email": "masum@nearharsh.com",
       "id": 5
     },
     {
-      "name": "Masum",
-      "email": "masum@nearharsh.com",
+      "name": "Prince",
+      "email": "prince@gmail.com",
       "id": 6
-    },
-    {
-      "name": "Satya",
-      "email": "satya@don.com",
-      "id": 7
-    },
-    {
-      "name": "hello",
-      "email": "jhello@gmail.com",
-      "id": 8
-    },
-    {
-      "name": "",
-      "email": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "email": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "email": "",
-      "id": 11
-    },
-    {
-      "name": "hello",
-      "email": "hello@gmail.com",
-      "id": 12
     }
   ]
 }
