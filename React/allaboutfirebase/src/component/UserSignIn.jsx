@@ -1,46 +1,49 @@
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { app } from "../firebase";
 
 const auth = getAuth(app);
 
-function UserSignup() {
+function UserSignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const signupUser = () => {
-    createUserWithEmailAndPassword(auth, email, password).then(() =>
-      alert("User Signup Successfully")
-    );
+  const signInUser = () => {
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => alert("User Sign In Successfully!"))
+      .catch((err) => console.log(err));
   };
 
   return (
     <>
-      <div className="container text-bg-dark p-4 my-4">
-        <h1 className="text-center">Sign Up</h1>
+      <div className="container text-bg-success p-4 my-4">
+        <h1 className="text-center">Sign In</h1>
+
         <div className="col">
-          <label>User Email</label>
+          <label>Enter Your Email </label>
           <input
             type="email"
             required
-            placeholder="Enter Email Here"
+            placeholder="Enter Your Email Here"
             className="form-control my-3"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="col">
-          <label>User Password</label>
+          <label>Enter Your Password </label>
           <input
             type="password"
             required
-            placeholder="Enter Password Here"
+            placeholder="Enter Your Password Here"
             className="form-control my-3"
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="col">
-          <button className="btn btn-primary" onClick={signupUser}>
-            Sign Up
+          <button className="btn btn-primary" onClick={signInUser}>
+            Sign In
           </button>
         </div>
       </div>
@@ -48,4 +51,4 @@ function UserSignup() {
   );
 }
 
-export default UserSignup;
+export default UserSignIn;
