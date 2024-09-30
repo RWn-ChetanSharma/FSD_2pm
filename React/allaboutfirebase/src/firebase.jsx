@@ -1,14 +1,13 @@
-import { initializeApp } from 'firebase/app'
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCJqx0S3Qk8u-wewqeXvRkbX-4fQVDsKR0",
-    authDomain: "mybook-app-ba831.firebaseapp.com",
-    projectId: "mybook-app-ba831",
-    storageBucket: "mybook-app-ba831.appspot.com",
-    messagingSenderId: "66142709012",
-    appId: "1:66142709012:web:ba1ba8229fccc9dca7ce01",
-    databaseURL: "https://mybook-app-ba831-default-rtdb.firebaseio.com"
-  };
-
+  apiKey: process.env.REACT_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_FIREBASE__AUTH_DOMAIN,
+  projectId: process.env.REACT_FIREBASE__PROJECT_ID,
+  storageBucket: process.env.REACT_FIREBASE__STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_FIREBASE__MESSAGING_SENDER_ID,
+  appId: process.env.REACT_FIREBASE__APP_ID,
+  databaseURL: process.env.REACT_FIREBASE__DATABASE_URL,
+};
 
 export const app = initializeApp(firebaseConfig);
