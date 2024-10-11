@@ -1,14 +1,14 @@
-// import Array from "./Components/Array"
+import Array from "./Components/Array"
 // import Counter from "./Components/Counter"
-import Product from "./Components/Product"
+// import Product from "./Components/Product"
 
 
 function App() {
   return (
     <>
-      {/* <Array/> */}
+      <Array/>
       {/* <Counter/> */}
-      <Product/>
+      {/* <Product/> */}
     </>
   )
 }

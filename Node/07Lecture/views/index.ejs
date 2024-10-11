@@ -14,7 +14,7 @@
         background-color: crimson;
         color: aliceblue;
       }
-      .container{
+      .container {
         width: 90%;
         margin: auto;
       }
@@ -29,8 +29,16 @@
       </form>
 
       <ul>
-        <% records.forEach((record) => { %>
-        <li><%= record %></li>
+        <% records.forEach((record, index) => { %>
+        <li>
+          <%= record %>
+          <form action="/edit/<%= index %>" method="post" style="display: inline;">
+            <button type="submit">Edit</button>
+          </form>
+          <form action="/delete/<%= index %>" method="get" style="display: inline;">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
         <% }) %>
       </ul>
     </div>
