@@ -42,3 +42,11 @@
 > URL-encoded Data: It can also handle URL-encoded data, which is typically used when submitting forms.
 
 > Custom Parsing: You can configure it for custom data types and handle various content types.
+
+
+
+
+
+# app.use(express.urlencoded({ extended: true }));
+ 
+> It is a built-in middleware function in Express based on a body parser module. When there is a HTTP POST request from the client with content type application/x-www-form-urlencoded , this middleware parses the data and populates the req.body object with key-value pairs.

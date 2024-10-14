@@ -32,7 +32,7 @@
         <% records.forEach((record, index) => { %>
         <li>
           <%= record %>
-          <form action="/edit/<%= index %>" method="post" style="display: inline;">
+          <form action="/edit/<%= index %>" method="post" style="display: inline;" enctype="">
             <button type="submit">Edit</button>
           </form>
           <form action="/delete/<%= index %>" method="get" style="display: inline;">
