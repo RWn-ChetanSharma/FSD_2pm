@@ -4,11 +4,12 @@ const fs = require("fs");
 
 // fs.writeFileSync('./test.txt', "Namaste Bharat Sync")
 
-// const res = fs.readFileSync("./about.txt", "utf-8", (err)=>{})
-// console.log(res);
-// console.log(res.toString());
+// const res = fs.readFileSync("./test.txt", "utf-8", (err)=>{})
+const res = fs.readFileSync("./test.txt",  (err)=>{})
+console.log(res);
+console.log(res.toString());
 
-fs.unlinkSync("./about.txt")
+// fs.unlinkSync("./about.txt")
 
 
 

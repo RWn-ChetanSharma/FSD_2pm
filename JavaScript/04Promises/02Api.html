@@ -20,6 +20,8 @@
     <script>
       async function name(params) {
         let apic = await fetch("https://fakestoreapi.com/products/1");
+        console.log(apic);
+        
         // console.log(await apic.json());
         let pro = await apic.json();
         console.log(pro.image);
